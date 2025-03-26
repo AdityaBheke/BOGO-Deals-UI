@@ -6,6 +6,7 @@
     font-family: sans-serif;
 }
 :root{
+    --accent-dark: #D7445B;
     --highlight: #ff4d6d;
     --accent: #FF6B82;
     --background: #FFF9FA;
@@ -122,4 +123,75 @@
 }
 table{
     border-spacing: 0.5rem;
+}
+.checkout{
+    display: flex;
+    justify-content: space-between;
+}
+.delivery-info{
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.total{
+    font-size: 0.9rem;
+}
+.cart-button{
+    all: unset;
+    padding: 1rem;
+    background-color: var(--accent);
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+.most-popular::after{
+    content: 'Most Popular';
+    position: absolute;
+    right: 20px;
+    top: -0.6rem;
+    width: 100px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: var(--accent);
+    color: white;
+    padding: 5px 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.most-popular::before{
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: -0.6rem;
+    width: 120px;
+    height: 20px;
+    z-index: -2;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: var(--accent-dark);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.footer{
+    color: var(--background-dark);
+    text-align: end;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 900px) {
+    .main{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .main{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main{
+        width: 100%;
+    }
 }
