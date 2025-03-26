@@ -178,6 +178,7 @@ table{
     color: var(--background-dark);
     text-align: end;
     font-size: 0.9rem;
+    font-style: italic;
 }
 
 @media screen and (max-width: 900px) {
